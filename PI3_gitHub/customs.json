@@ -1,0 +1,18 @@
+{
+    "elements": {
+        "div": {
+            "attributes": {
+                "id": {},
+                "class": {}
+            }
+        },
+        "button": {},
+        "img": {
+            "attributes": {
+                "src": {},
+                "alt": {}
+            }
+        }
+    },
+    "attributes": {}
+}
