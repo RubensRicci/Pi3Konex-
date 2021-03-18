@@ -1,14 +1,14 @@
 @import url('global.css');
 
 body{
-    font-family: "Inter", sans-serif;
     min-height:100vh;
     min-width:100vw;
     background-color:#f2f3f5;
 }
 #container-landing{
+    max-width:1220px;
+    margin:0 auto;
     min-width:980px;
-    border:2px solid red;
 }
 #container-landing .menu-bar{
     display:flex;
@@ -17,7 +17,6 @@ body{
     align-items:center;
     height:15vh; 
     margin:0 40px;
-    border:2px solid blue;
     background:#FFF;
 }
 #container-landing .menu-bar ul li{
@@ -28,4 +27,42 @@ body{
 }
 #container-landing .menu-bar ul button{
     margin-left:42px;
+    border:1px solid var(--gray-line);
+    background:none;
+    font:400 1rem "Poppins", sans-serif;
+    cursor:pointer;
+    width:140px;
+    padding:15px 0;
+    border-radius:5px;
+}
+#container-landing main{
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+}
+#container-landing main form{
+   width:600px;
+}
+#container-landing main form input{
+    width:100%;
+    outline:none;
+    color:#23286b;
+    line-height:34px;
+    font:600 16px "Inter", sans-serif;
+    padding:10px 10px;
+    flex:100%;
+    border-radius:20px;
+    border:1px solid #ccc;
+    letter-spacing:0.4px;
+}
+#container-landing main form input::placeholder{
+    color:rgba(0,0,0,0.5);
+    font-weight: normal;
+}
+#container-landing main h1{
+    padding:55px 0;
+    font-family:"Inter", sans-serif;
+    color:#3e3e3e;
+    font-weight:500;
 }
