@@ -10,16 +10,18 @@
         <meta name="author" content="konex-group">
 
 
-        <link rel="stylesheet" href="menu.css">
+        <link rel="stylesheet" href="home.css">
+        <script src="https://kit.fontawesome.com/194a95388c.js" crossorigin="anonymous"></script>
         <link rel="shortcut icon" href="favicon.png">
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;500;600;700&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+        <script src="home.js"></script>
     </head>
     <body>
         <div id="container-landing">
             <section class="menu-bar">
                 <div>
-                    <img src="" alt="logo-image" />
+                    <img src="logo-image.jpeg" alt="logo-image" />
                 </div>
                 <div>
                     <ul>
@@ -33,19 +35,31 @@
                 </div>
             </section>
             <main>
-                <h1>Bem-vindo ao app Rapina!</h1>
+                <h1>
+                    Bem-vindo ao app <strong>Rapina</strong>!
+                </h1>
+                <p>Torne-se um rapinante conosco;)</p>
                 <div class="form-container">
-                    <form action="">
-                        <input 
+                    <form action="" name="searching">
+                            <input 
                             type="text" 
                             id="block-search" 
                             maxlength="30" 
                             name="text-name" 
                             placeholder="Buscar" 
                         />
+                        <div class="input-submit">
+                            <input type="submit" value="Search"  onclick="newPopup()" />
+                        </div>
                     </form>
                 </div>
             </main>
+            
+            <section class="footer-wrapper">
+                <div class="footer-content">
+                    
+                </div>
+            </section>         
         </div>
     </body>
 </html>

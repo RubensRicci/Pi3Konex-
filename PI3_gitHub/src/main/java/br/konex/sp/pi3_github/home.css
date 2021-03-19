@@ -6,7 +6,6 @@ body{
     background-color:#f2f3f5;
 }
 #container-landing{
-    max-width:1220px;
     margin:0 auto;
     min-width:980px;
 }
@@ -16,18 +15,26 @@ body{
     justify-content:space-between;
     align-items:center;
     height:15vh; 
-    margin:0 40px;
-    background:#FFF;
+    margin:0 40px 86px 40px;
 }
 #container-landing .menu-bar ul li{
     display:inline;
     padding:0 26px;
     color:#23286b;
     font:600 16px "Poppins", sans-serif;
+    cursor:pointer;
+}
+#container-landing .menu-bar ul li:hover{
+    color:var(--blue-twitter);
+    transition-duration:250ms;
+}
+#container-landing .menu-bar img{
+    width:200px;
+    background-color:none;
 }
 #container-landing .menu-bar ul button{
     margin-left:42px;
-    border:1px solid var(--gray-line);
+    border:2px solid var(--gray-line);
     background:none;
     font:400 1rem "Poppins", sans-serif;
     cursor:pointer;
@@ -43,11 +50,13 @@ body{
 }
 #container-landing main form{
    width:600px;
+   display:flex;
+   flex-direction:row;
 }
 #container-landing main form input{
     width:100%;
     outline:none;
-    color:#23286b;
+    color:var(--color-primary-darker);
     line-height:34px;
     font:600 16px "Inter", sans-serif;
     padding:10px 10px;
@@ -55,14 +64,35 @@ body{
     border-radius:20px;
     border:1px solid #ccc;
     letter-spacing:0.4px;
+    cursor:pointer;
+}
+#container-landing main form input[type="submit"]{
+    margin-left:10px;
+    border-radius:5px;
+    cursor:pointer;
+    background-color:var(--red);
+    color:#fff;
+    width:140px;
+    padding:10px 0;
+}
+#container-landing main form input[type="submit"]:hover{
+    filter:brightness(0.85);
+    transition:background 300ms;
 }
 #container-landing main form input::placeholder{
     color:rgba(0,0,0,0.5);
     font-weight: normal;
 }
 #container-landing main h1{
-    padding:55px 0;
     font-family:"Inter", sans-serif;
     color:#3e3e3e;
     font-weight:500;
+}
+#container-landing main strong{
+    color:var(--color-primary);
+}
+#container-landing main p{
+    margin:28px 0;
+    font:400 15px "Poppins", sans-serif;
+    color:rgba(0,0,0,0.3);
 }
