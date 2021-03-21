@@ -2,11 +2,21 @@
     "elements": {
         "div": {
             "attributes": {
+                "role": {},
+                "tabindex": {},
                 "id": {},
                 "class": {}
             }
         },
-        "button": {},
+        "button": {
+            "attributes": {
+                "data-bs-dismiss": {},
+                "type": {},
+                "class": {},
+                "data-dismiss": {},
+                "aria-label": {}
+            }
+        },
         "img": {
             "attributes": {
                 "src": {},
@@ -14,5 +24,9 @@
             }
         }
     },
-    "attributes": {}
+    "attributes": {
+        "integrity": {
+            "context": "link"
+        }
+    }
 }
